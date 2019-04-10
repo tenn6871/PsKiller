@@ -10,7 +10,7 @@ ps=$(ps -ef | grep ${psn} | grep -v grep | grep -v vim | awk '{print $2}')
 if [ $cut -gt 0 ] #카운팅된 PID가 0개면 exit
 then 
 	kill -9 $ps
-	echo "$dt : $psn Killed."
+	echo "$psn Killed."
 else 
 	echo " "
 fi
